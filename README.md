@@ -97,7 +97,6 @@ Building upon this framework, much more complex, robust, and profitable strategi
 
 4. Run the back test using:
   ```
-    # runs back test
     back = cerebro.run()
   ```
 
