@@ -11,6 +11,8 @@ Quantitative trading is a type of market strategy that relies on mathematical an
 
 This project aims to serve as a framework for developing and backtesting trading strategies, allowing for easy data visualisation and strategy performance comparison.
 
+Presented, is an extremely basic, and likely unprofitable, simple moving average crossover strategy that buys when the 10-day moving average crosses the 50-day moving average, and sells when the reverse occurs. 
+
 
 
 
@@ -89,12 +91,13 @@ This project aims to serve as a framework for developing and backtesting trading
     cerebro.broker.setcash(1000.0)
     # sets size per trade
     cerebro.addsizer(bt.sizers.PercentSizer, percents = 10)
+  ```
 
 4. Run the back test using:
-    ```
+  ```
     # runs back test
     back = cerebro.run()
-    ```
+  ```
 
   
 
@@ -115,7 +118,7 @@ Twitter - [@TraderTDF](https://twitter.com/TraderTDF)
 
 LinkedIn - [https://www.linkedin.com/in/RAMWatson/](https://www.linkedin.com/in/RAMWatson/)
 
-Project Link: [https://github.com/Elisik/](https://github.com/Elisik/)
+Project Link: [https://github.com/Elisik/Quant-Trading-Strategy-Backtesting-Framework](https://github.com/Elisik/Quant-Trading-Strategy-Backtesting-Framework)
 
 
 
@@ -126,4 +129,5 @@ Project Link: [https://github.com/Elisik/](https://github.com/Elisik/)
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/RAMWatson/
+[product-screenshot]: screenshot.jpg
 
