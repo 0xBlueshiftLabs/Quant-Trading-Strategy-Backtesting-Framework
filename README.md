@@ -11,7 +11,9 @@ Quantitative trading is a type of market strategy that relies on mathematical an
 
 This project aims to serve as a framework for developing and backtesting trading strategies, allowing for easy data visualisation and strategy performance comparison.
 
-Presented, is an extremely basic, and likely unprofitable, simple moving average crossover strategy that buys when the 10-day moving average crosses the 50-day moving average, and sells when the reverse occurs. 
+Presented in the script as a demonstration, an extremely basic, and likely unprofitable, simple moving average crossover strategy is provided. Said strategy buys when the 10-day moving average crosses the 50-day moving average, and sells when the reverse occurs.
+
+Building upon this framework, much more complex, robust, and profitable strategies can be built, tested, and optimised.
 
 
 
