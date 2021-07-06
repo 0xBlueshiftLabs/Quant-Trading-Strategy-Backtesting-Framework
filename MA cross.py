@@ -16,11 +16,11 @@ class MaCrossStrategy(bt.Strategy):
 
     # executes order from the signals
     def next(self):
-        if not self.position:
-            if self.crossover > 0:
-                self.buy()
-        elif self.crossover < 0:
-            self.close()
+        if not self.position:         # if not already in a position (i.e. long or short)
+            if self.crossover > 0:    # if 10-day moving average crosses above 50-day moving average
+                self.buy()            # take a long position
+        elif self.crossover < 0:      # if 10-day moving average crosses below 50-day moving average
+            self.close()              # take a short position
 
 
 cerebro = bt.Cerebro()
