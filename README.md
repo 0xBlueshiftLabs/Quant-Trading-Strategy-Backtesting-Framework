@@ -58,7 +58,7 @@ Building upon this framework, much more complex, robust, and profitable strategi
 
 1. Obtain price data.
 
-2. Create a signal generator within the __init__ function of the class as follows:
+2. Create a signal generator within the __init__ function of the strategy class:
   ```py
    # signal generator
     def __init__(self):
@@ -73,11 +73,11 @@ Building upon this framework, much more complex, robust, and profitable strategi
   ```py
    # executes order from the signals
     def next(self):
-        if not self.position:
-            if self.crossover > 0:
-                self.buy()
-        elif self.crossover < 0:
-            self.close()
+        if not self.position:         # if not already in a position (i.e. long or short)
+            if self.crossover > 0:    # if 10-day moving average crosses above 50-day moving average
+                self.buy()            # take a long position
+        elif self.crossover < 0:      # if 10-day moving average crosses below 50-day moving average
+            self.close()              # take a short position
    ```
    
 3. Initialise the backtesting engine (Cerebro). Add the price data and strategy before setting inital conditions such as account size and risk amount per trade etc.
