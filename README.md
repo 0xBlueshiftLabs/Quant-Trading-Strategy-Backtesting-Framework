@@ -56,7 +56,7 @@ Building upon this framework, much more complex, robust, and profitable strategi
 <!-- GETTING STARTED -->
 ## Getting Started
 
-1. Obtain price data.
+1. [Obtain price data](https://github.com/Elisik/Binance-API-Price-Data-Interface).
 
 2. Create a signal generator within the __init__ function of the strategy class:
   ```py
