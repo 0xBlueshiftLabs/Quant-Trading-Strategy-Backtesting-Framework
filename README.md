@@ -77,7 +77,7 @@ Building upon this framework, much more complex, robust, and profitable strategi
             if self.crossover > 0:    # if 10-day moving average crosses above 50-day moving average
                 self.buy()            # take a long position
         elif self.crossover < 0:      # if 10-day moving average crosses below 50-day moving average
-            self.close()              # take a short position
+            self.close()              # close long position
    ```
    
 3. Initialise the backtesting engine (Cerebro). Add the price data and strategy before setting inital conditions such as account size and risk amount per trade etc.
