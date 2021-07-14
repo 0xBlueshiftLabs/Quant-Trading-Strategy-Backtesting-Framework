@@ -73,7 +73,7 @@ Building upon this framework, much more complex, robust, and profitable strategi
   ```py
    # executes order from the signals
     def next(self):
-        if not self.position:         # if not already in a position (i.e. long or short)
+        if not self.position:         # if not already in a position
             if self.crossover > 0:    # if 10-day moving average crosses above 50-day moving average
                 self.buy()            # take a long position
         elif self.crossover < 0:      # if 10-day moving average crosses below 50-day moving average
