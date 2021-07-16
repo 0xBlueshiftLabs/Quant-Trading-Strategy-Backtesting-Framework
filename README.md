@@ -16,6 +16,9 @@ Presented in the script as a demonstration, an extremely basic, and likely unpro
 Building upon this framework, much more complex, robust, and profitable strategies can be built, tested, and optimised.
 
 
+Note: YahooFinanceData API is currently not working, therefore I would recommend loading data from a CSV file.
+
+
 
 
 
