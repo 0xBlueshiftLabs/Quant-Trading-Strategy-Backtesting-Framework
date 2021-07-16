@@ -11,7 +11,7 @@ Quantitative trading is a type of market strategy that relies on mathematical an
 
 This project aims to serve as a framework for developing and backtesting trading strategies, allowing for easy data visualisation and strategy performance comparison.
 
-Presented in the script as a demonstration, an extremely basic, and likely unprofitable, simple moving average crossover strategy is provided. Said strategy buys when the 10-day moving average crosses the 50-day moving average, and sells when the reverse occurs.
+Presented in the script as a demonstration, an extremely basic, and likely unprofitable, simple moving average crossover strategy is provided. Said strategy buys when the 10-day moving average crosses the 20-day moving average, and sells when the reverse occurs.
 
 Building upon this framework, much more complex, robust, and profitable strategies can be built, tested, and optimised.
 
@@ -63,7 +63,7 @@ Building upon this framework, much more complex, robust, and profitable strategi
     def __init__(self):
 
         ma_fast = bt.ind.SMA(period = 10)
-        ma_slow = bt.ind.SMA(period = 50)
+        ma_slow = bt.ind.SMA(period = 20)
 
         self.crossover = bt.ind.CrossOver(ma_fast, ma_slow)
   ```
@@ -73,9 +73,9 @@ Building upon this framework, much more complex, robust, and profitable strategi
    # executes order from the signals
     def next(self):
         if not self.position:         # if not already in a position
-            if self.crossover > 0:    # if 10-day moving average crosses above 50-day moving average
+            if self.crossover > 0:    # if 10-day moving average crosses above 20-day moving average
                 self.buy()            # take a long position
-        elif self.crossover < 0:      # if 10-day moving average crosses below 50-day moving average
+        elif self.crossover < 0:      # if 10-day moving average crosses below 20-day moving average
             self.close()              # close long position
    ```
    
