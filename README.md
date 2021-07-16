@@ -98,11 +98,9 @@ Building upon this framework, much more complex, robust, and profitable strategi
   ```
     back = cerebro.run()
   ```
-Note: YahooFinanceData API is currently not working, therefore I would recommend loading data from a CSV file.
-  
 
 <p align="center">
-  <img width="777" height="393" src="/Output.png">
+  <img width="800" height="550" src="/Output.jpg">
 </p>
   
 
